@@ -4,10 +4,7 @@ from django.contrib import admin
 from .models import Sensor, Measurement
 
 
-# class MeasurementInline(admin.Inline):
-#     model = Measurement
 
-#
 @admin.register(Sensor)
 class SensorAdmin(admin.ModelAdmin):
     list_display = ['name', 'description']
