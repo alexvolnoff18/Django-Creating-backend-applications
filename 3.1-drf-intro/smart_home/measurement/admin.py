@@ -1,3 +1,18 @@
+
 from django.contrib import admin
 
-# Register your models here.
+from .models import Sensor, Measurement
+
+
+# class MeasurementInline(admin.Inline):
+#     model = Measurement
+
+#
+@admin.register(Sensor)
+class SensorAdmin(admin.ModelAdmin):
+    list_display = ['name', 'description']
+
+
+@admin.register(Measurement)
+class MeasurementAdmin(admin.ModelAdmin):
+    list_display = ['sensor', 'temperature', 'created_at']
