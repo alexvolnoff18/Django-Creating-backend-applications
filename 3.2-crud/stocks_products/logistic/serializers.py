@@ -10,6 +10,7 @@ class ProductSerializer(serializers.ModelSerializer):
         fields = '__all__'
     # pass
 
+
 # https://github.com/Stanislov85/DZ_4_6_CRUD/blob/master/logistic/serializers.py
 
 class ProductPositionSerializer(serializers.ModelSerializer):
