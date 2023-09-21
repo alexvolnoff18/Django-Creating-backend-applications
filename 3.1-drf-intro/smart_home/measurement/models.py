@@ -20,7 +20,7 @@ class Measurement(models.Model):
                                related_name='measurement')
     temperature = models.FloatField(verbose_name='Температура, оС')
     created_at = models.DateTimeField(auto_now_add=True, verbose_name='Дата и время измерения')
-    image = models.ImageField(null=True, blank=True)
+    image = models.ImageField(blank=True)
 
     class Meta:
         verbose_name = 'Показание'
