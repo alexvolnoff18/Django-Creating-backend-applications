@@ -19,3 +19,4 @@ class StockViewSet(ModelViewSet):
     filter_fields = ['address', 'products']
 
 
+
